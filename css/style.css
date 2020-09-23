@@ -6,9 +6,7 @@
 }
 
 body {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 header {
@@ -293,17 +291,32 @@ main .left-sec {
 
   .mainheader .logo {
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+  }
+
+  .mainheader #orange {
     display: none;
+  }
+
+  .mainheader #green {
+    text-transform: uppercase;
+    color: orangered !important;
   }
 
   .mainheader nav {
-    padding: 10px 0px;
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
   }
 
-  .mainheader .menubtn {
-    display: none;
+  .mainheader nav a {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
   }
 
   main,
@@ -323,7 +336,6 @@ main .left-sec {
   .mobiletext h1 {
     font-size: 55px;
     font-weight: 700;
-    margin-top: 1.4rem;
   }
 
   main .left-sec {
@@ -331,7 +343,8 @@ main .left-sec {
   }
 
   main .right-sec {
-    margin-top: 3rem;
+    margin-top: 8rem;
+    width: 60vh;
   }
 
   #gallery {
