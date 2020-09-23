@@ -294,10 +294,16 @@ main .left-sec {
   .mainheader .logo {
     flex-direction: column;
     margin-top: 2rem;
+    display: none;
   }
 
   .mainheader nav {
     padding: 10px 0px;
+    display: none;
+  }
+
+  .mainheader .menubtn {
+    display: none;
   }
 
   main,
@@ -327,6 +333,7 @@ main .left-sec {
   main .right-sec {
     margin-top: 3rem;
   }
+
   #gallery {
     min-height: 80vh;
   }
