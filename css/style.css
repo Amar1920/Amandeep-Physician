@@ -15,6 +15,7 @@ header {
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  overflow: hidden;
 }
 
 ul {
@@ -275,6 +276,9 @@ main .left-sec {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     width: 100%;
     height: 80vh;
