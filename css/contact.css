@@ -1,0 +1,128 @@
+body {
+  background: white;
+  color: black;
+  font-family: tahoma;
+}
+
+p {
+  font-size: 24px;
+}
+
+#wrap {
+  width: 530px;
+  margin: 20px auto 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#form-wrap {
+  overflow: hidden;
+  height: 447px;
+  position: relative;
+  top: 0px;
+  transition: all 1s ease-in-out 0.3s;
+}
+
+#form-wrap:before {
+  content: "";
+  position: absolute;
+  bottom: 128px;
+  left: 0px;
+  background: url("../img/before.png");
+  width: 530px;
+  height: 317px;
+  background-size: 50% no-repeat;
+}
+
+#form-wrap:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: url("../img/after.png");
+  width: 530px;
+  height: 259px;
+  background-size: 50% no-repeat;
+}
+
+#form-wrap.hide:after,
+#form-wrap.hide:before {
+  display: none;
+}
+
+#form-wrap:hover {
+  height: 777px;
+  top: -200px;
+}
+
+form {
+  background: white;
+  position: relative;
+  top: 200px;
+  overflow: hidden;
+  height: 200px;
+  width: 400px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-right: 3px;
+  transition: all 1s ease-in-out 0.3s;
+}
+
+#form-wrap:hover form {
+  height: 530px;
+}
+
+label {
+  margin: 11px 20px 0 0;
+  font-size: 15px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+textarea {
+  font: 14px normal uppercase, arial, serif;
+  color: dimgray;
+  background: none;
+  width: 380px;
+  height: 37px;
+  padding: 0px 10px;
+  margin: 0 0 10px 0;
+  border: 1px solid #f8f5f1;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 80px;
+  padding-top: 14px;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  background: white;
+}
+
+#form-wrap input[type="submit"] {
+  position: relative;
+  font-family: tahoma;
+  font-size: 24px;
+  color: black;
+  width: 100%;
+  text-align: center;
+  background: none;
+  cursor: pointer !important;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .menubtn {
+    display: none;
+  }
+}
