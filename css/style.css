@@ -266,7 +266,7 @@ main .left-sec {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 150px;
+  height: 100px;
   background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
 }
 
