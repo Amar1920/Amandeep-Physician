@@ -13,6 +13,6 @@
 //   }
 // });
 
-const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+const scroll = new SmoothScroll(' a[href*="#"]', {
   speed: 500,
 });
