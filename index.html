@@ -66,7 +66,7 @@
       <div class="services" id="service">
         <section class="right-sec">
           <figure>
-            <img src="img/contact.jpg" />
+            <img src="img/services.jpg" />
           </figure>
         </section>
 
@@ -158,7 +158,7 @@
 
         <section class="left-sec contact-form">
           <h1>Contact Us</h1>
-          <form action="" class="callback-form">
+          <form action="POST" data-netlify="true" class="callback-form">
             <div class="form-control">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Name" />
@@ -176,7 +176,9 @@
                 placeholder="Phone"
               />
             </div>
-            <a href="#"><button class="greenbtn">Req Callback</button></a>
+            <a href="#"
+              ><button class="greenbtn" name="btn">Req Callback</button></a
+            >
           </form>
         </section>
       </div>
